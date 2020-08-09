@@ -10,4 +10,4 @@
 
 ## 目录
 
-- [python基本数据类型，使用`list`, `tuple`和`dict`]()
+- [python基本数据类型，使用`list`, `tuple`和`dict`](https://nbviewer.jupyter.org/github/zipeilee/pytonew/blob/master/lecture/use_list.ipynb)
