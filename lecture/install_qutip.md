@@ -33,9 +33,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 之前我在[b站的视频](https://www.bilibili.com/video/BV1Yt4y1X7Rv)上介绍了如何使用vscode写python代码，不过那是完全的windows环境。好消息是vscode有一个插件叫做 remote-wsl， 通过这个插件你可以很方便的在win10的vscode上通过linux子系统环境写代码作调试，就像在windows里写代码一样。但我后来发现用vscode写jupter notebook文件还是有些缺陷，jupyter lab比它好用多了。因此今天先不详细介绍vscode的用法，你可以自行阅读[remote-wsl插件使用方法](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)并配置好。
 
 正常来说使用Jupyter lab很简单，anaconda里已经自带了这个包，你安装好anaconda没问题好只需要在终端里输入命令`jupyter lab`就能使用。
-但是wsl的问题在于，你只有一个终端，没有图形界面，jupter lab是通过浏览器访问的，你没有图形界面就没有浏览器，因此你输入上述命令之后，jupyter lab是被你打开了并且跑了起来，但是你却看不到它。不过wsl毕竟wsl，w开头的，因此wsl也是可以访问windows的exe程序的，也就是说，你可以配置相应的环境变量，把windows下的浏览器设置城wsl的默认浏览器！你只需要在终端里输入`code ~/.bashrc`
-
-`.bashrc`是ubuntu的bash的配置文件。通过上面的命令打开配置文件之后，在最末尾加一行
+但是wsl的问题在于，你只有一个终端，没有图形界面，jupter lab是通过浏览器访问的，你没有图形界面就没有浏览器，因此你输入上述命令之后，jupyter lab是被你打开了并且跑了起来，但是你却看不到它。不过wsl毕竟wsl，w开头的，因此wsl也是可以访问windows的exe程序的，也就是说，你可以配置相应的环境变量，把windows下的浏览器设置城wsl的默认浏览器！你只需要在终端里输入`code ~/.bashrc`就能通过vscode编辑ubuntu的bash的配置文件。在配置文件的末尾加上一行：
 ```bash
 export BROWSER='/mnt/c/Program Files/Mozilla Firefox/firefox.exe'
 ```
