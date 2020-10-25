@@ -40,6 +40,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 export BROWSER='/mnt/c/Program Files/Mozilla Firefox/firefox.exe'
 ```
 （当然路径改称你自己的安装路径，而且不一定是firefox，chrome也可以，edge也可以，这个只是参考）
+
 ctrl + s 保存文件之后，再在终端里输入`source ~/.bashrc`
 然后你就能通过`jupyter lab`命令正常打开jupyter lab啦。关于jupyter lab的配置和使用可以参考[我的b站视频](https://www.bilibili.com/video/BV1Yt4y1X7Rv)中使用jupyter notebook的部分以及[他们的官网](https://jupyter.org/)。
 
